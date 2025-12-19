@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chibuike Brain - Education Journey</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11b4d4",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar to match the dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101f22; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #234248; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #11b4d4; 
+        }
+        
+        /* Smooth scrolling for the whole page */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animation utilities */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.33); }
+            80%, 100% { opacity: 0; }
+        }
+        .animate-pulse-ring {
+            animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111f22] dark:text-white antialiased overflow-x-hidden">
+<!-- Navbar -->
+<nav class="sticky top-0 z-50 w-full border-b border-solid border-b-[#234248] bg-[#101f22]/90 backdrop-blur-md">
+<div class="px-4 md:px-10 py-3 max-w-7xl mx-auto flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-[32px]">hexagon</span>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Chibuike Brain</h2>
+</div>
+<!-- Desktop Menu -->
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<div class="flex items-center gap-9">
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-primary text-sm font-medium leading-normal" href="#">Journey</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Projects</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">About</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-[#0e9ab5] transition-colors text-[#111f22] text-sm font-bold leading-normal tracking-[0.015em]">
+<span>Resume</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</nav>
+<main class="flex flex-col items-center w-full min-h-screen">
+<!-- Header Section -->
+<section class="w-full max-w-[960px] px-4 md:px-10 pt-16 pb-8 text-center md:text-left">
+<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-[-0.02em] mb-4">The Origin Story</h1>
+<p class="text-[#92c0c9] text-lg max-w-2xl">
+                A chronological deep dive into the educational milestones that shaped my engineering philosophy. From early curiosity to specialized mastery.
+            </p>
+</section>
+<!-- Timeline Section -->
+<section class="w-full max-w-7xl px-4 md:px-10 py-10 relative">
+<!-- Central Spine (Desktop) / Left Spine (Mobile) -->
+<!-- The line is positioned absolutely. Left-4 for mobile, center for desktop. -->
+<div class="absolute left-8 md:left-1/2 top-0 bottom-20 w-[2px] bg-[#234248] md:-translate-x-1/2 z-0"></div>
+<div class="flex flex-col gap-20 md:gap-32 pb-20">
+<!-- Stage 1: Nursery & Primary (Image Right, Text Left) -->
+<div class="relative w-full flex flex-col md:flex-row items-center justify-between group">
+<!-- Timeline Node -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-8 w-4 h-4 rounded-full bg-primary border-4 border-[#101f22] z-10 shadow-[0_0_15px_rgba(17,180,212,0.6)] group-hover:scale-125 transition-transform duration-300">
+<div class="absolute -inset-2 rounded-full bg-primary/30 animate-pulse-ring"></div>
+</div>
+<!-- Text Content (Left on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 md:text-right order-2 md:order-1 mt-6 md:mt-0">
+<div class="flex flex-col md:items-end gap-2">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Foundation</span>
+<h3 class="text-white text-2xl md:text-3xl font-bold">Nursery &amp; Primary</h3>
+<div class="text-[#92c0c9] font-mono text-lg mb-2">1998 - 2004</div>
+<p class="text-gray-400 leading-relaxed max-w-md">
+                                The early years were defined by unbridled curiosity. It wasn't just about grades; it was about disassembling toys to see how they worked and the first spark of logical thinking that would fuel a lifetime of engineering.
+                            </p>
+</div>
+</div>
+<!-- Image Content (Right on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 order-1 md:order-2">
+<div class="relative aspect-video w-full overflow-hidden rounded-xl border border-[#234248] group-hover:border-primary/50 transition-colors duration-300 bg-[#111f22]">
+<div class="absolute inset-0 bg-primary/10 z-10 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-500"></div>
+<img alt="Vintage style photo of a classroom chalkboard representing early education" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 grayscale-[30%] group-hover:grayscale-0" data-alt="Vintage style photo of a classroom chalkboard representing early education" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHi1EZdvlTvkZXDrHdbHrCA0cncrLobNORJwXr9ZNjjsFT19AvG0mbm57mBLwqlHeOPkYrdksJvI8A31GsxaGvrkIe9phffPM9HQkrFi_xgXDWIVoIWJ1U2Xjog49meUBkgPVUpItFunxNzoWbwu7YOvBfcBruZYwBpswVWjzKsJoAxxim5PkZIjIkr35xYrvKHKrGGEUkg4_SAbP_ygGxOOTJ50fwmP-P-NG6vH8D4NP-euHKzfvzzah-5uhTNoDrnjOOTooPibU"/>
+<!-- Overlay Label -->
+<div class="absolute bottom-4 left-4 z-20 bg-black/60 backdrop-blur-sm px-3 py-1 rounded text-xs text-white border border-white/10">
+<span class="material-symbols-outlined text-[14px] align-middle mr-1">school</span> Early Days
+                            </div>
+</div>
+</div>
+</div>
+<!-- Stage 2: Secondary School (Image Left, Text Right) -->
+<div class="relative w-full flex flex-col md:flex-row items-center justify-between group">
+<!-- Timeline Node -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-8 w-4 h-4 rounded-full bg-[#101f22] border-2 border-[#92c0c9] group-hover:bg-primary group-hover:border-primary z-10 transition-colors duration-300"></div>
+<!-- Image Content (Left on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 order-1 md:order-1">
+<div class="relative aspect-video w-full overflow-hidden rounded-xl border border-[#234248] group-hover:border-primary/50 transition-colors duration-300 bg-[#111f22]">
+<div class="absolute inset-0 bg-primary/10 z-10 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-500"></div>
+<img alt="Science laboratory glassware representing discovery and high school chemistry" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 grayscale-[30%] group-hover:grayscale-0" data-alt="Science laboratory glassware representing discovery and high school chemistry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbCpX4i0iVtk0jfemAvkTJr-wz3wAyGet3G7fzlCrF_kXpmFR_lBLq2dXOFc3AJs9o2lrPhM4z8UXXRMCvvyLmvJnvCDQS54l2WCPi61kfGyQ0goiM8uFQgrq5T4eXXE88fx0QJ95DpRC7r1u2irhrYfSxIes_V_5Onn7nI5OEos7DBJ5Vqk6egD7kTr9WgFlxRr634UPF6uSn_sNX0lsKQM_4ia4IodEXnVjBDLGxkEt4v8Z_tZIjZK-j27itM4DPeQmSSHnzmTM"/>
+<div class="absolute bottom-4 right-4 z-20 bg-black/60 backdrop-blur-sm px-3 py-1 rounded text-xs text-white border border-white/10">
+<span class="material-symbols-outlined text-[14px] align-middle mr-1">science</span> Discovery Phase
+                            </div>
+</div>
+</div>
+<!-- Text Content (Right on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 md:text-left order-2 md:order-2 mt-6 md:mt-0">
+<div class="flex flex-col md:items-start gap-2">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Discovery</span>
+<h3 class="text-white text-2xl md:text-3xl font-bold">Secondary School</h3>
+<div class="text-[#92c0c9] font-mono text-lg mb-2">2005 - 2011</div>
+<p class="text-gray-400 leading-relaxed max-w-md">
+                                The pivot point. My interest in Science &amp; Tech crystallized here. From physics experiments to the first lines of BASIC code, I realized I didn't just want to use technology—I wanted to build it.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Stage 3: Bachelor's Degree (Image Right, Text Left) -->
+<div class="relative w-full flex flex-col md:flex-row items-center justify-between group">
+<!-- Timeline Node -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-8 w-4 h-4 rounded-full bg-[#101f22] border-2 border-[#92c0c9] group-hover:bg-primary group-hover:border-primary z-10 transition-colors duration-300"></div>
+<!-- Text Content (Left on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 md:text-right order-2 md:order-1 mt-6 md:mt-0">
+<div class="flex flex-col md:items-end gap-2">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">The Builder</span>
+<h3 class="text-white text-2xl md:text-3xl font-bold">Bachelor's Degree</h3>
+<div class="text-[#92c0c9] font-mono text-lg mb-2">2012 - 2016</div>
+<p class="text-gray-400 leading-relaxed max-w-md">
+                                Computer Science Major. This was the era of "Hello World" turning into complex systems. I built my first full-stack application, survived algorithm classes, and learned the art of collaborative coding.
+                            </p>
+</div>
+</div>
+<!-- Image Content (Right on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 order-1 md:order-2">
+<div class="relative aspect-video w-full overflow-hidden rounded-xl border border-[#234248] group-hover:border-primary/50 transition-colors duration-300 bg-[#111f22]">
+<div class="absolute inset-0 bg-primary/10 z-10 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-500"></div>
+<img alt="Laptop with code on screen on a wooden desk representing university coding projects" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 grayscale-[30%] group-hover:grayscale-0" data-alt="Laptop with code on screen on a wooden desk representing university coding projects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfk9Ol7zG9qC7nkh1Gc5pK6dqzeF0PHOANYO9Sd_44bXuN0tHaGN4VdfuVOK2hNKKj40KRZCQ0FV1aQUT4azzBTVL74RIgDbLKOV7VJOfLW-KlAuVBljU6dbNQVJg_0sdG7dZChvgK7TXiX66ePUohUC_v5bIk9rOkjP-JzgFLN9BSL7uWNKHdVmH27kix8vLVVKlv4Wk1gryg7ZRiiiLsspBJaAzQBgiAFpruNz37-k18I0wKP8eiwFajnkPbQI0coq6dGB0ia7A"/>
+<div class="absolute bottom-4 left-4 z-20 bg-black/60 backdrop-blur-sm px-3 py-1 rounded text-xs text-white border border-white/10">
+<span class="material-symbols-outlined text-[14px] align-middle mr-1">code</span> CS &amp; Engineering
+                            </div>
+</div>
+</div>
+</div>
+<!-- Stage 4: Master's Degree (Image Left, Text Right) -->
+<div class="relative w-full flex flex-col md:flex-row items-center justify-between group">
+<!-- Timeline Node -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-8 w-4 h-4 rounded-full bg-primary border-4 border-[#101f22] z-10 shadow-[0_0_15px_rgba(17,180,212,0.6)] group-hover:scale-125 transition-transform duration-300">
+<div class="absolute -inset-2 rounded-full bg-primary/30 animate-pulse-ring"></div>
+</div>
+<!-- Image Content (Left on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 order-1 md:order-1">
+<div class="relative aspect-video w-full overflow-hidden rounded-xl border border-[#234248] group-hover:border-primary/50 transition-colors duration-300 bg-[#111f22]">
+<div class="absolute inset-0 bg-primary/10 z-10 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-500"></div>
+<img alt="Futuristic server room or advanced tech lab representing masters specialization" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 grayscale-[30%] group-hover:grayscale-0" data-alt="Futuristic server room or advanced tech lab representing masters specialization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl3UgqPxnTFFELaDKfl9SZHh-LFqS2ikbsyTBXfaF16cVKZzmJRJm6ZNiRKDLCvoBSAiFa9AEHOkCRHAKkJBVCOIBtO2lU9Szn-i2vi0nTOPQsThvzhXzeK6kqxn3spx51hYl5OVUC0FSFUKCtSnMex0O0Ee0nM9DsquY1ZhzLlsDGkP8OejVFWAqkyNX9baFwNIKPB7Om11QSMVkVaYU2EPq6i3Qzj-Z2nMDHL0tE1BUxWbROdnsCJwgmXqd4RVjuWSI_aFZlA1A"/>
+<div class="absolute bottom-4 right-4 z-20 bg-black/60 backdrop-blur-sm px-3 py-1 rounded text-xs text-white border border-white/10">
+<span class="material-symbols-outlined text-[14px] align-middle mr-1">psychology</span> Specialization
+                            </div>
+</div>
+</div>
+<!-- Text Content (Right on Desktop) -->
+<div class="w-full md:w-[calc(50%-48px)] pl-16 md:pl-0 md:text-left order-2 md:order-2 mt-6 md:mt-0">
+<div class="flex flex-col md:items-start gap-2">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Mastery</span>
+<h3 class="text-white text-2xl md:text-3xl font-bold">Master's Degree</h3>
+<div class="text-[#92c0c9] font-mono text-lg mb-2">2018 - 2020</div>
+<p class="text-gray-400 leading-relaxed max-w-md">
+                                Specialization &amp; Advanced Engineering. I dove deep into Distributed Systems and AI. This period was about refining my craft, understanding the 'why' behind the code, and preparing for large-scale impact.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Fade for Line -->
+<div class="absolute bottom-0 left-8 md:left-1/2 w-[2px] h-20 bg-gradient-to-t from-[#101f22] to-transparent md:-translate-x-1/2 z-0"></div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 px-4 w-full flex justify-center bg-gradient-to-b from-[#101f22] to-[#0e1b1e]">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary hover:bg-[#0e9ab5] hover:scale-105 transition-all duration-300 text-[#111f22] gap-3 text-lg font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(17,180,212,0.4)]">
+<span class="material-symbols-outlined font-bold">arrow_forward</span>
+<span class="truncate">See What I Built Next</span>
+</button>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-[#234248] bg-[#101f22] py-12">
+<div class="max-w-[960px] mx-auto px-5 flex flex-col gap-6 text-center">
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-[#92c0c9] hover:text-primary transition-colors hover:scale-110 transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-size: 28px;">terminal</span>
+</a>
+<a class="text-[#92c0c9] hover:text-primary transition-colors hover:scale-110 transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-size: 28px;">work</span>
+</a>
+<a class="text-[#92c0c9] hover:text-primary transition-colors hover:scale-110 transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-size: 28px;">alternate_email</span>
+</a>
+<a class="text-[#92c0c9] hover:text-primary transition-colors hover:scale-110 transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-size: 28px;">rss_feed</span>
+</a>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-white text-lg font-bold">Chibuike Brain</p>
+<p class="text-[#587a82] text-sm font-normal leading-normal">© 2024. Crafted with logic and creativity.</p>
+</div>
+</div>
+</footer>
+</main>
+</body></html>
