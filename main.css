@@ -1,0 +1,133 @@
+html,
+* {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar to match the theme */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #101f22;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #234248;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #11b4d4;
+}
+
+.text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+}
+
+.bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.glass-panel {
+    background: rgba(22, 40, 45, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Subtle fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.floating-input:focus-within label {
+    transform: translateY(-1.5rem) scale(0.85);
+    color: #11b4d4;
+}
+
+.floating-input:focus-within input,
+.floating-input:focus-within textarea {
+    border-color: #11b4d4;
+}
+
+.floating-input input:not(:placeholder-shown)+label,
+.floating-input textarea:not(:placeholder-shown)+label {
+    transform: translateY(-1.5rem) scale(0.85);
+}
+
+/* Hide scrollbar for clean masonry look if needed, but keeping it visible for usability */
+.masonry-grid {
+    column-count: 1;
+}
+
+@media (min-width: 640px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+.break-inside-avoid {
+    break-inside: avoid;
+}
+
+/* Animation utilities */
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.33);
+    }
+
+    80%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-pulse-ring {
+    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}

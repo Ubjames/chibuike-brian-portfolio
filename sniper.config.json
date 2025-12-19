@@ -1,0 +1,14 @@
+{
+    "css": "main.css",
+    "scripts": [
+        {
+            "src": "/tailwind-config.js",
+            "id": "tailwind-config",
+            "position": "top"
+        },
+        {
+            "src": "/script.js",
+            "position": "top"
+        }
+    ]
+}
