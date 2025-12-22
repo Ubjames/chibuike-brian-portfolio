@@ -5,7 +5,18 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Chibuike Brain - Memories Gallery</title>
+    <title>Chibuike Brain | Memories Gallery</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo_icon/favicon-32x32.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/logo_icon/favicon-16x16.png"> -->
+    <link rel="manifest" href="/logo_icon/site.webmanifest">
+    <meta name="description" content="Portfolio of Chibuike Brian Okafor - Full Stack Developer" />
+    <meta property="og:title" content="Chibuike Brian | Personal Brand Portfolio">
+    <meta property="og:description" content="Portfolio of Chibuike Brian Okafor - Full Stack Developer  ">
+    <meta property="og:image" content="https://chibuike.net.com/images/chibuike-brian-logo.png">
+    <meta property="og:url" content="https://chibuike.net.com">
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -19,23 +30,77 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
+
     <!-- SniperJS -->
     <script src="https://cdn.jsdelivr.net/npm/js-sniper/dist/sniper.min.js"></script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Config -->
 
+    <style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
+        ::-webkit-scrollbar-track {
+            background: #101f22;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #234248;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #11b4d4;
+        }
+
+        /* Hide scrollbar for clean masonry look if needed, but keeping it visible for usability */
+        .masonry-grid {
+            column-count: 1;
+        }
+
+        @media (min-width: 640px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+
+        .break-inside-avoid {
+            break-inside: avoid;
+        }
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chibuike Brian",
+  "image": "https://chibuike.net/images/chibuike-brian-2.svg",
+  "url": "https://chibuike.net",
+  "sameAs": [
+    "https://github.com/Brianchib",
+  ]
+}
+</script>
 </head>
 
 <body
     class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden transition-colors duration-300">
     <div class="relative flex min-h-screen w-full flex-col">
-        <!-- Navbar -->
+        <!-- Sticky Header -->
         <header
             class="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-[#234248]">
         </header>
-        <main class="flex-1 flex flex-col items-center w-full">
+        <main class="flex-1 flex flex-col items-center w-full mt-20">
             <div class="w-full max-w-[1280px] px-4 md:px-10 py-8">
                 <!-- Page Heading & Filters -->
                 <div class="flex flex-col gap-8 mb-10">
@@ -62,9 +127,10 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Filter Chips -->
-                    <div class="flex flex-wrap gap-3 py-2 border-b border-[#234248]/50 pb-6">
-                        <button
+                    <div class="flex flex-wrap gap-3 py-2 border-b border-[#234248]/50 pb-6 ">
+                        <!-- <button
                             class="group flex h-9 items-center justify-center gap-x-2 rounded-full bg-primary text-[#111f22] px-5 transition-all">
                             <span class="text-sm font-bold">All</span>
                         </button>
@@ -83,19 +149,19 @@
                         <button
                             class="group flex h-9 items-center justify-center gap-x-2 rounded-full bg-[#234248] hover:bg-[#2f555d] text-white px-5 transition-all">
                             <span class="text-sm font-medium">Milestones</span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <!-- Masonry Gallery -->
                 <div class="masonry-grid gap-6 space-y-6 pb-20">
                     <!-- Item 1: Large Feature -->
-                    <div
+                    <div data-cat="life"
                         class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-1">
                         <div class="aspect-[4/3] w-full bg-gray-800">
                             <img alt="Speaking on stage at a large tech conference"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 data-alt="Speaking on stage at a large tech conference"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi_eed2QBD2hp8rqK1fMkS6gXjvMVEiMEz4WCmAFw8Cmzo60Pm_GHHdVFK61xn57SQjtz2l8W233Os14XecJe0fW4QaxvtUK82TbBBp-0l6qzzPEUSmApSSF9o8hNOkws9_nWUXsGWbH7o55cM1LA4vpD7k5z608Y7gAEsmnjnqwPDy3usSPKifwLes0onDg7ipIiEuqq1_RcDZ5FqUa-VnOcJhNueLCOMrIQ0QHn137OqUrhBfdLuFVexi23hlnQ3Fw35TyA3f64" />
+                                src="images/chibuike-brian-14.JPG" loading="lazy" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-[#101f22]/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300">
@@ -116,10 +182,10 @@
                     <div
                         class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
                         <div class="aspect-[3/4] w-full bg-gray-800">
-                            <img alt="Person standing on a mountain peak looking at view"
+                            <img alt="Hand shaking between a student and professor"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                data-alt="Person standing on a mountain peak looking at view"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8SosdYb7KGEVC_RFg47VCEyLT3N6gX6v3NaE0S1fHZL47xNjY7y-WtHjVN3fqox4HugQT8vDeDv6ki0EWMrJGn32cHKmTzK7HniZ_7DjeDVPpmEZxFq33Eys4cBKLV9DLZEvVKDQB2lVowYAaD858DmGCtIVgfXDQFF0g2RUlbDS5VXpyd_ZOXohq5L0jOat_1XTD36wz-QUYk6aXLwqqc-TJoZfZgtfgDnA6ylNJ3QECOlWXeziUtH2en0If_OKDc0xYzeyGDm8" />
+                                data-alt="Hand shaking between a student and professor"
+                                src="images/chibuike-brian-hand-shaking-professor.JPG" loading="lazy" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -128,8 +194,9 @@
                             class="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                             <div class="flex justify-between items-end">
                                 <div>
-                                    <h3 class="text-white text-lg font-bold">Swiss Alps</h3>
-                                    <p class="text-primary text-xs font-mono mt-1">46.8182° N, 8.2275° E</p>
+                                    <h3 class="text-white text-lg font-bold">Getting Congratulated </h3>
+                                    <p class="text-primary text-xs font-mono mt-1">Had the previledge of handing the VC
+                                        of the Institute </p>
                                 </div>
                                 <div
                                     class="bg-white/10 p-2 rounded-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
@@ -145,7 +212,7 @@
                             <img alt="Coding setup with laptop and coffee on desk"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 data-alt="Coding setup with laptop and coffee on desk"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgoVO1z7hh8bsSqAwIFRq3CIPl07b_mPqT8Ak4eKkLmGBokrBolAuI5BqkAs2-rrCjiwkleCwkTubG4_AIZLWk66zUziFY904IHpYsrYnRGnWzbnnZ5CJFT2AkfS8ZUG2yXQ-iKTydCydOxrBR2a1iJQkOnfX4Q_uIDuS60UXwflNB18z7aIw_LIMtHrn9fGPOkqKrdsQqTXACyZw7mxNAzVW5BJ3t3UXbJVkUYOYicyrxf8G1K5bkBfM7z7HzygQ-OTTHVfNilVs" />
+                                src="images/chibuike-brian-24.JPG" loading="lazy" />
                         </div>
                         <div
                             class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300">
@@ -166,8 +233,8 @@
                         <div class="aspect-[9/16] w-full bg-gray-800">
                             <img alt="Hiking trail through a dense moody forest"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                data-alt="Hiking trail through a dense moody forest"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgdNikNEpje0Mb8lEpjhYOsxsWJnZQpC-7_CtmKjl-ZvT4K3lQP2gvMqLlFzHf-Cokr8H1yR7NwANzebYtiV1wLcBZGl9diuTvv6gHeEbqfG17ujy_osX_X9-HNFargwrRliLYUqP8j0go4oVp8r8m7xyHk7MZkVZQwqDLnkxLJYhevfAbah_JnaLO03uTkkHGKWIb_veKPQuXGMVZxROCR-n-WQrtGiNwEsM1yT54j3S4twO_U8ObLB9ljT5ZJn2D-tUaBnF2O9s" />
+                                data-alt="Hiking trail through a dense moody forest" src="images/chibuike-brian-9.JPG"
+                                loading="lazy" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300">
@@ -190,9 +257,9 @@
                         class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
                         <div class="aspect-[16/9] w-full bg-gray-800">
                             <img alt="Team working together on laptops during hackathon"
-                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                class="w-full transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                                 data-alt="Team working together on laptops during hackathon"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeR8cjPgQFKGUzK8_svbZODBIHV-HOARKnGUP1UtSK1tKCqu82co7AyvpW7i8vyErcooJKbyx02I2hNaPnHRkp5dul8gNs5Y9GkHp7oUuieMGnJyJYB1Y5_EWDhKgy_mjiTSlGcn2uWsUN6EyQ2HnrnxNaA9n456yWo25uo-eAmTPF4wPkrKEO-4X6JX3D23e94YqENp0G4wg3DYpeTREjvIrPQGimSTbTE2pfFGE7z6QP1eTmqn_AInZ2HUW2PK0LUTuYm2Az5Mo" />
+                                src="images/chibuike-brian-6.JPG" loading="lazy" />
                         </div>
                         <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
                         <div
@@ -208,7 +275,93 @@
                             <img alt="Collaborative meeting in a modern office space"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 data-alt="Collaborative meeting in a modern office space"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdX39YGwzTRPgEYKW2YSxjMWmX7cOaGY_53BVf44vb3LVjYjP46UWI441iMoxSsY465uzbT-IyHp_VcSEbc5ypF_JWqybiCWK-eUuaAJn4OT9PdGjf3sd-03wle6hPts568hzcXLE7O6cnPey6a-3ZkyYAME6Z5o2qscsQLugm75fJp58k4JuK6bIpvC4hHuMPrGJEc4M0t8n6YZUSvLxpLyzyOucqXzmIPhM8fhYI1ItHmJhyWLe39PCDtvKQ_Un3q4caYM-v96U" />
+                                src="images/chibuike-brian-20.JPG" loading="lazy" />
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-white text-lg font-bold">Team Sync</h3>
+                            <p class="text-primary text-xs mt-1">Building the dream team</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-[3/4] w-full bg-gray-800">
+                            <img alt="Collaborative meeting in a modern office space"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Collaborative meeting in a modern office space"
+                                src="images/chibuike-brian-15.JPG" loading="lazy" />
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-white text-lg font-bold">Team Sync</h3>
+                            <p class="text-primary text-xs mt-1">Building the dream team</p>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-[3/4] w-full bg-gray-800">
+                            <img alt="Collaborative meeting in a modern office space"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Collaborative meeting in a modern office space"
+                                src="images/chibuike-brian-23.JPG" loading="lazy" />
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-white text-lg font-bold">Team Sync</h3>
+                            <p class="text-primary text-xs mt-1">Building the dream team</p>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-[3/4] w-full bg-gray-800">
+                            <img alt="Collaborative meeting in a modern office space"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Collaborative meeting in a modern office space"
+                                src="images/chibuike-brian-riding-on-horse.png" loading="lazy" />
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-white text-lg font-bold">Team Sync</h3>
+                            <p class="text-primary text-xs mt-1">Building the dream team</p>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-[3/4] w-full bg-gray-800">
+                            <img alt="Collaborative meeting in a modern office space"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Collaborative meeting in a modern office space"
+                                src="images/chibuike-brian-with-hassan.png" loading="lazy" />
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-white text-lg font-bold">Team Sync</h3>
+                            <p class="text-primary text-xs mt-1">Building the dream team</p>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-[3/4] w-full bg-gray-800">
+                            <img alt="Collaborative meeting in a modern office space"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Collaborative meeting in a modern office space"
+                                src="images/chibuike-brian-34.png" loading="lazy" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-[#101f22] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -226,7 +379,87 @@
                             <img alt="Group of friends talking and laughing at lunch"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 data-alt="Group of friends talking and laughing at lunch"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSPhqL0pUOsPUEWgAFlLV53T4nik98KIllqSoWrQb4p_tOm8yhGR4WHzv5a8YWLDCwMPu7aRjm6n9VQ2_BACdZ0hqs-iV0ZVh6PVioIXBTV60bdfvI0rdBAfcNKeojP-UUIf4fJ_RRfMKjbej5xPrlkN8ws8echusmupu0NkSuYvvprT-miDAZ2lqFSuM5556hX7fZ1W4yTh1KXTEaC36-2PFYHCZs_oxJn3GBzd4jlFXK4y-XLoU5_0VK8p7dBCx5NimG4tRsnRQ" />
+                                src="images/chibuike-brian-17.jpeg" loading="lazy" />
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="material-symbols-outlined text-white drop-shadow-md">favorite</span>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-[#101f22] to-transparent">
+                            <h3 class="text-white text-lg font-bold">Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-gray-800">
+                            <img alt="Group of friends talking and laughing at lunch"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Group of friends talking and laughing at lunch"
+                                src="images/chibuike-brian-21.jpg" loading="lazy" />
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="material-symbols-outlined text-white drop-shadow-md">favorite</span>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-[#101f22] to-transparent">
+                            <h3 class="text-white text-lg font-bold">Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-gray-800">
+                            <img alt="Group of friends talking and laughing at lunch"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Group of friends talking and laughing at lunch"
+                                src="images/chibuike-brian-12.JPG" loading="lazy" />
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="material-symbols-outlined text-white drop-shadow-md">favorite</span>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-[#101f22] to-transparent">
+                            <h3 class="text-white text-lg font-bold">Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-gray-800">
+                            <img alt="Group of friends talking and laughing at lunch"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Group of friends talking and laughing at lunch"
+                                src="images/chibuike-brian-13.JPG" loading="lazy" />
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="material-symbols-outlined text-white drop-shadow-md">favorite</span>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-[#101f22] to-transparent">
+                            <h3 class="text-white text-lg font-bold">Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-gray-800">
+                            <img alt="Group of friends talking and laughing at lunch"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Group of friends talking and laughing at lunch"
+                                src="images/chibuike-brian-10.JPG" loading="lazy" />
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="material-symbols-outlined text-white drop-shadow-md">favorite</span>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-[#101f22] to-transparent">
+                            <h3 class="text-white text-lg font-bold">Lunch Break</h3>
+                        </div>
+                    </div>
+                    <div
+                        class="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer bg-surface-dark shadow-xl ring-1 ring-white/5 hover:ring-primary/50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-gray-800">
+                            <img alt="Group of friends talking and laughing at lunch"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Group of friends talking and laughing at lunch"
+                                src="images/chibuike-brian-44.png" loading="lazy" />
                         </div>
                         <div class="absolute top-4 left-4">
                             <span class="material-symbols-outlined text-white drop-shadow-md">favorite</span>
@@ -237,14 +470,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Load More / Pagination -->
-                <div class="flex justify-center pb-10">
-                    <button class="group flex items-center gap-2 text-[#92c0c9] hover:text-white transition-colors">
-                        <span class="text-sm font-bold uppercase tracking-widest">Load More Memories</span>
-                        <span
-                            class="material-symbols-outlined group-hover:translate-y-1 transition-transform">expand_more</span>
-                    </button>
-                </div>
+
             </div>
         </main>
         <!-- Footer Section -->
@@ -255,3 +481,4 @@
 </body>
 
 </html>
+<!-- google-site-verification=-h6sNZ8aX8rfFE7AjSdTK5FtRpy1DT3sXIaOCBxNpFU -->

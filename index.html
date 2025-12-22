@@ -5,7 +5,18 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Chibuike Brain Portfolio</title>
+    <title>Chibuike Brian | Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo_icon/favicon-32x32.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/logo_icon/favicon-16x16.png"> -->
+    <link rel="manifest" href="/logo_icon/site.webmanifest">
+    <meta name="description" content="Portfolio of Chibuike Brian Okafor - Full Stack Developer" />
+    <meta property="og:title" content="Chibuike Brian | Personal Brand Portfolio">
+    <meta property="og:description" content="Portfolio of Chibuike Brian Okafor - Full Stack Developer  ">
+    <meta property="og:image" content="https://chibuike.net.com/images/chibuike-brian-logo.png">
+    <meta property="og:url" content="https://chibuike.net.com">
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -25,6 +36,18 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chibuike Brian",
+  "image": "https://chibuike.net/images/chibuike-brian-2.svg",
+  "url": "https://chibuike.net",
+  "sameAs": [
+    "https://github.com/Brianchib",
+  ]
+}
+</script>
 
 
 </head>
@@ -55,7 +78,7 @@
                     <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter">
                         CHIBUIKE <br />
                         <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500 dark:from-white dark:to-slate-500">BRAIN</span>
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500 dark:from-white dark:to-slate-500">BRIAN</span>
                     </h1>
                 </div>
                 <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
@@ -101,7 +124,9 @@
                     <!-- Main Portrait Image -->
                     <div class="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl bg-slate-800 group"
                         data-alt="Modern professional portrait of software developer with cinematic lighting"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY7aWaB8szBybDqkKZlfgZUssPrUShfynjdaZwiwEA6mG7c4PV0zJ7F9JIYEKhJZj_Yyk-G9NH0ap90QNOei26nFhALzEVH3-yxYeBdAO3yC5sztWQXim-X2cXM6_E_HMz6X-jLOzyi-tde5jn33DXRWkRuwjuU71vE_1Q4VO7iN8Zln2xwPoXvd1CyO7reFG6Ki27M29klFC_r7ySWPH42uMFPo_PxXTCtjmY4TB0I31SW0wNIbS6X_JT3JzDt-A5lcAtto4zVJI'); background-size: cover; background-position: center;">
+                        style=" background-size: cover; background-position: center;">
+                        <img src="images/chibuike-brian-2.svg" alt="Chibuike Brian"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80">
                         </div>
@@ -119,10 +144,11 @@
                             <div class="font-mono text-xs text-slate-300">
                                 <span class="text-purple-400">const</span> <span class="text-blue-400">developer</span>
                                 = {<br />
-                                  name: <span class="text-green-400">'Chibuike Brain'</span>,<br />
-                                  stack: [<span class="text-green-400">'React'</span>, <span
-                                    class="text-green-400">'Node'</span>, <span
-                                    class="text-green-400">'Three.js'</span>]<br />
+                                  name: <span class="text-green-400">'Chibuike Brian'</span>,<br />
+                                  stack: [<span class="text-green-400">'React'</span>,
+                                <span class="text-green-400">'PHP'</span>,
+                                <span class="text-green-400">'SQL'</span>,
+                                <span class="text-green-400">'Python'</span>]<br />
                                 };
                             </div>
                         </div>
@@ -147,7 +173,7 @@
         <!-- Social Dock (Floating) -->
         <div class="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-40 hidden xl:flex">
             <a class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-primary text-white hover:text-[#111f22] transition-all border border-slate-700 hover:border-primary backdrop-blur-sm group relative"
-                href="#">
+                href="https://github.com/Brianchib">
                 <span class="material-symbols-outlined text-xl">code</span>
                 <span
                     class="absolute right-14 bg-slate-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">GitHub</span>
@@ -159,7 +185,7 @@
                     class="absolute right-14 bg-slate-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">LinkedIn</span>
             </a>
             <a class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-primary text-white hover:text-[#111f22] transition-all border border-slate-700 hover:border-primary backdrop-blur-sm group relative"
-                href="#">
+                href="mailto:chibuikeokafor861@gmail.com">
                 <span class="material-symbols-outlined text-xl">mail</span>
                 <span
                     class="absolute right-14 bg-slate-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Email</span>
@@ -186,9 +212,10 @@
                     <div
                         class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-surface-dark shadow-2xl shadow-primary/5">
                         <!-- Image with Duotone feel -->
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                            data-alt="Portrait of a software developer looking thoughtful in a modern workspace"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCA-eK4Pbo5gKDLiMlTnDb1Qm2XyT6MVPcRMdwSiodwoDZT2gkEYQGyQqDiL1DMYmZct3sWHbymZrx6PETb784urjDAiJ0mXzTzkGHaADKBszJjrhQOtCcCEuvY259xLKaBzqqZO33MWblOHq8dEs1lmrGQxGcNowKUaV4AbVnCgXyWdy0VMtoCzxZgZ4jPIvK0hqJpQ8jrg74DxfsY5cXubV-9HKkojwzfsZAJpGKsC24AXQrNu_Ley_1EZ80vF6_p37H8ZmQcKgo');">
+                        <div
+                            class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            <img src="images/chibuike-brian.svg" alt="Chibuike Brian"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                         </div>
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent">
@@ -200,7 +227,7 @@
                                 <span class="material-symbols-outlined text-primary">location_on</span>
                                 <div>
                                     <p class="text-white text-xs font-bold uppercase tracking-wider">Based In</p>
-                                    <p class="text-gray-300 text-sm">Lagos, Nigeria</p>
+                                    <p class="text-gray-300 text-sm">Northampton, Uk</p>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +283,7 @@
                     </div>
                     <!-- Signature Block -->
                     <div class="py-6">
-                        <p class="font-signature text-4xl text-gray-500 -rotate-2">Chibuike Brain</p>
+                        <p class="font-signature text-4xl text-gray-500 -rotate-2">Chibuike Brian</p>
                     </div>
                     <!-- Skills / Chips -->
                     <div>
@@ -305,7 +332,7 @@
                             <span>View Resume</span>
                         </button>
                         <a class="text-white font-medium hover:text-primary transition-colors flex items-center gap-2 group"
-                            href="#">
+                            href="https://github.com/Brianchib">
                             <span>Check my GitHub</span>
                             <span
                                 class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -435,7 +462,7 @@
 
 
         <!-- Projects -->
-        <div class="relative flex min-h-screen w-full flex-col group/design-root">
+        <div class="relative flex min-h-screen w-full flex-col group/design-root" id="projects">
             <!-- Header Section -->
             <div class="layout-container flex w-full flex-col items-center pt-20 pb-8">
                 <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center w-full">
@@ -730,7 +757,7 @@
                 <div class="px-40 flex flex-1 justify-center py-5">
                     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                         <div class="flex px-4 py-3 justify-center">
-                            <button
+                            <a href="https://github.com/Brianchib" target="_blank"
                                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-slate-800 hover:bg-slate-700 dark:bg-[#1a2e33] dark:hover:bg-[#234248] text-white gap-2 transition-colors duration-300 shadow-lg group">
                                 <span
                                     class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform duration-300">
@@ -742,7 +769,7 @@
                                     class="material-symbols-outlined text-white/50 text-sm ml-1 group-hover:text-primary transition-colors">
                                     arrow_forward
                                 </span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -778,7 +805,8 @@
                                 class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background-light dark:from-background-dark to-transparent z-20 pointer-events-none hidden md:block">
                             </div>
                             <!-- Scrollable Track -->
-                            <div class="flex overflow-x-auto gap-6 pb-12 snap-x snap-mandatory no-scrollbar pr-[20%]">
+                            <div id="testimonialsTrack"
+                                class="flex overflow-x-auto gap-6 pb-12 snap-x snap-mandatory no-scrollbar scroll-smooth  pr-[20%]">
                                 <!-- Card 1: Sarah Jenkins (Active) -->
                                 <div
                                     class="snap-center shrink-0 w-[85vw] md:w-[600px] flex flex-col md:flex-row gap-0 rounded-2xl overflow-hidden bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-800 shadow-xl dark:shadow-none group transition-transform hover:scale-[1.01] duration-300">
@@ -830,7 +858,7 @@
                                             <p
                                                 class="text-lg md:text-xl font-light leading-relaxed text-gray-700 dark:text-gray-200 mb-6">
                                                 "Rarely do you find a developer who cares about pixels as much as logic.
-                                                Working with Brain was the highlight of our Q3 sprint."
+                                                Working with Brian was the highlight of our Q3 sprint."
                                             </p>
                                         </div>
                                         <div
@@ -909,21 +937,22 @@
                             <div class="flex flex-col gap-2 w-full md:w-64">
                                 <div
                                     class="flex gap-6 justify-between text-sm font-medium text-gray-500 dark:text-gray-400">
-                                    <span>01</span>
-                                    <span>05</span>
+                                    <span id="currentIndex">01</span>
+                                    <span id="totalCount">05</span>
                                 </div>
                                 <div class="h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
-                                    <div class="h-full rounded-full bg-primary" style="width: 25%;"></div>
+                                    <div class="h-full rounded-full bg-primary" id="progressBar" style="width: 0%;">
+                                    </div>
                                 </div>
                             </div>
                             <!-- Controls -->
                             <div class="flex items-center gap-4 self-end md:self-auto">
-                                <button
+                                <button id="prevBtn"
                                     class="group flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-transparent text-gray-900 dark:text-white transition-all hover:border-primary hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
                                     <span
                                         class="material-symbols-outlined transition-transform group-hover:-translate-x-0.5">arrow_back</span>
                                 </button>
-                                <button
+                                <button id="nextBtn"
                                     class="group flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-transparent text-gray-900 dark:text-white transition-all hover:border-primary hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
                                     <span
                                         class="material-symbols-outlined transition-transform group-hover:translate-x-0.5">arrow_forward</span>
@@ -938,7 +967,7 @@
 
 
         <!-- CONTACT FORM -->
-        <div class="flex-grow pt-24 pb-12 px-6 flex items-center justify-center min-h-[90vh]">
+        <div id="contact" class="flex-grow pt-24 pb-12 px-6 flex items-center justify-center min-h-[90vh]">
             <div class="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                 <!-- Left Column: Visual & Headline -->
                 <div class="flex flex-col gap-8 lg:pr-12">
@@ -974,7 +1003,7 @@
                                 <span class="material-symbols-outlined text-xl">code</span>
                             </a> <!-- GitHub placeholder -->
                             <a class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-primary hover:text-[#101f22] transition-colors"
-                                href="#">
+                                href="https://github.com/Brianchib">
                                 <span class="material-symbols-outlined text-xl">work</span>
                             </a> <!-- LinkedIn placeholder -->
                         </div>

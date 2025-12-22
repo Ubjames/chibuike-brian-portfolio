@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://chibuike.net/</loc>
+
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian.jpg</image:loc>
+      <image:title>Chibuike Brian</image:title>
+      <image:caption>Portrait of Chibuike Brian, software developer</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-5.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-6.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-7.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-9.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-10.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-11.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-12.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-13.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-14.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-15.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-16.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-17.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-with-hassan.png</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-graduating.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://chibuike.net/images/chibuike-brian-hand-shaking-professor.JPG</image:loc>
+      <image:title>Chibuike Brian Okafor</image:title>
+    </image:image>
+
+  </url>
+</urlset>
